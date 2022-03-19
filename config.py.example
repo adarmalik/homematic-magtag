@@ -1,0 +1,37 @@
+import collections
+import adafruit_logging as logging
+
+HC = collections.OrderedDict ([
+    ('HC1' , 'DSR8OUTID/6'),
+    ('HC2' , 'DSR8OUTID/2')
+])
+
+
+SWDM = collections.OrderedDict ([
+    ('Office', 'SWDMID1/1'),
+    ('SZ', 'SWDMID2/1'),
+    ('WC', 'SWDMID3/1'),
+    ('WZ', 'SWDMID4/1'),
+    ('Bad', 'SWDMID5/1')
+])
+
+
+WTH = collections.OrderedDict ([
+    ('Office', 'WTHID1/1'),
+    ('SZ', 'WTHID2/1'),
+    ('WC', 'WTHID3/1'),
+    ('WZ', 'WTHID4/1'),
+    ('Bad', 'WTHID5/1')
+])
+
+LOGGING = {
+    'ui': logging.INFO,
+    'hmip': logging.INFO,
+    'controls': logging.INFO,
+    'main': logging.INFO
+}
+
+MAX_INACTIVITY = 60
+STARTUP_COLOR = (8, 16, 0)
+SHUTDOWN_COLOR = (32,8,0)
+UI_DEFAULT_FONT = 'RobotoBold14.bdf'

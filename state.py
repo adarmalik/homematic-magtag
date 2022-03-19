@@ -1,0 +1,3 @@
+ 
+class RunMode:
+    RUNNING = True
